@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduResource - Learn with Us</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa; /* Light background for better readability */
+        }
+
+        .navbar {
+            background-color: #002147; /* Deep blue for navbar */
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffcc00 !important; /* Gold color on hover */
+        }
+
+        .hero {
+            background: linear-gradient(to right, #002147, #0056b3);
+            color: white;
+            padding: 70px 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in; /* Fade in effect */
+        }
+
+        .hero h1 {
+            margin-bottom: 20px;
+            font-size: 3em; /* Larger font size for the title */
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 40px; /* More space below the paragraph */
+        }
+
+        .tutorials {
+            padding: 60px 0;
+        }
+
+        .tutorial-item {
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 20px;
+            border: 1px solid #e0e0e0; /* Light gray border */
+            border-radius: 15px;
+            background-color: white; /* White background for cards */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tutorial-item:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .tutorial-item h3 {
+            color: #002147; /* Deep blue for headings */
+            font-weight: bold;
+            margin-bottom: 15px; /* Space below heading */
+        }
+
+        .tutorial-item p {
+            margin-bottom: 20px; /* Space below paragraph */
+        }
+
+        .tutorial-item a {
+            background-color: #ffcc00; /* Gold color for buttons */
+            color: #002147;
+            border-radius: 50px; /* Rounded button */
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .tutorial-item a:hover {
+            background-color: #e0a800; /* Darker gold on hover */
+            transform: scale(1.1); /* Slight scale effect on hover */
+        }
+
+        footer {
+            background-color: #002147; /* Deep blue for footer */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .tutorial-item {
+                margin-bottom: 20px;
+                padding: 15px;
+            }
+
+            .hero h1 {
+                font-size: 2.5em; /* Responsive font size */
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#">EduResource</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tutorials">Exams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resources">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to EduResource</h1>
+            <p>Your ultimate destination for exam preparation and resources.</p>
+            <a href="#tutorials" class="btn btn-light btn-lg">Explore Exams</a>
+        </div>
+    </section>
+
+    <!-- Exams Section -->
+    <section id="tutorials" class="tutorials container">
+        <h2 class="text-center">Exams</h2>
+        <div class="row">
+            <div class="col-md-4 tutorial-item">
+                <h3>UPSC Civil Services</h3>
+                <p>Prepare for the prestigious UPSC Civil Services Examination.</p>
+                <a href="C:\Users\Hxtreme\Desktop\educational website\english.html" class="btn">Start Preparation</a>
+            </div>
+            <div class="col-md-4 tutorial-item">
+                <h3>SSC CGL</h3>
+                <p>Excel in the Staff Selection Commission Combined Graduate Level exam.</p>
+                <a href="C:\Users\Hxtreme\Desktop\educational website\ssc.html" class="btn">Start Preparation</a>
+            </div>
+            <div class="col-md-4 tutorial-item">
+                <h3>State PSC</h3>
+                <p>Prepare for various State Public Service Commission exams.</p>
+                <a href="state-psc.html" class="btn">Start Preparation</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 tutorial-item">
+                <h3>IBPS PO</h3>
+                <p>Prepare for the Institute of Banking Personnel Selection Probationary Officer exam.</p>
+                <a href="ibps-po.html" class="btn">Start Preparation</a>
+            </div>
+            <div class="col-md-4 tutorial-item">
+                <h3>RBI Grade B</h3>
+                <p>Excel in the Reserve Bank of India Grade B examination.</p>
+                <a href="rbi-grade-b.html" class="btn">Start Preparation</a>
+            </div>
+            <div class="col-md-4 tutorial-item">
+                <h3>CLAT</h3>
+                <p>Prepare for the Common Law Admission Test for law schools in India.</p>
+                <a href="clat.html" class="btn">Start Preparation</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 tutorial-item">
+                <h3>CTET</h3>
+                <p>Prepare for the Central Teacher Eligibility Test for teaching positions.</p>
+                <a href="ctet.html" class="btn">Start Preparation</a>
+            </div>
+            <div class="col-md-4 tutorial-item">
+                <h3>Railway Exams</h3>
+                <p>Prepare for various railway recruitment examinations.</p>
+                <a href="railway-exams.html" class="btn">Start Preparation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2 class="text-center">About Us</h2>
+        <p>
+            EduResource is dedicated to providing comprehensive resources for students preparing for competitive exams.
+            Our goal is to empower learners with the necessary tools and guidance to succeed in their academic journeys.
+        </p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EduResource. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap and jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

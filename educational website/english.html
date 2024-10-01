@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC Exam Preparation</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        h1, h2 {
+            color: #007BFF;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .nav-link {
+            font-weight: bold;
+        }
+
+        .highlight {
+            background-color: #e9f5ff;
+            border-left: 4px solid #007BFF;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .list-group-item {
+            border: none;
+        }
+
+        .custom-container {
+            border: 1px solid #007BFF;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: white;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .custom-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+        }
+
+        /* New styles for buttons and sections */
+        .btn-primary-custom {
+            background-color: #007BFF;
+            border-color: #007BFF;
+        }
+
+        .btn-primary-custom:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .custom-container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">EduResource</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#syllabus">Syllabus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#exam-pattern">Exam Pattern</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#post-details">Post Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#preparation-tips">Preparation Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources">Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content container my-5">
+        <h1>UPSC Civil Services Examination</h1>
+        <p>The UPSC Civil Services Examination is one of the most prestigious exams in India, conducted by the Union Public Service Commission. It selects candidates for various civil services positions in the government.</p>
+
+        <div class="highlight">
+            <h2 class="section-title">Important Dates</h2>
+            <ul>
+                <li>Notification Release: <strong>February</strong></li>
+                <li>Preliminary Exam: <strong>May</strong></li>
+                <li>Main Exam: <strong>September</strong></li>
+                <li>Final Results: <strong>February (next year)</strong></li>
+            </ul>
+        </div>
+
+        <!-- Syllabus Container -->
+        <div id="syllabus" class="custom-container">
+            <h2>Syllabus</h2>
+            <p>The UPSC syllabus is vast and covers various topics, including:</p>
+            <ul class="list-group">
+                <li class="list-group-item">General Studies (GS) - Paper I</li>
+                <li class="list-group-item">General Studies (GS) - Paper II (CSAT)</li>
+                <li class="list-group-item">Optional Subject (chosen by the candidate)</li>
+            </ul>
+            <p>Topics include:</p>
+            <ul>
+                <li>History of India and Indian National Movement</li>
+                <li>Geography of the World and India</li>
+                <li>Indian Polity and Governance</li>
+                <li>Economic and Social Development</li>
+                <li>Environmental Ecology, Biodiversity and Climate Change</li>
+                <li>Current Events of National and International Importance</li>
+            </ul>
+        </div>
+
+        <!-- Exam Pattern Container -->
+        <div id="exam-pattern" class="custom-container">
+            <h2>Exam Pattern</h2>
+            <p>The UPSC exam consists of three stages:</p>
+            <ol>
+                <li><strong>Preliminary Examination:</strong> Two objective-type papers (General Studies I and General Studies II)</li>
+                <li><strong>Main Examination:</strong> Nine papers (including essay, general studies, and optional subjects)</li>
+                <li><strong>Personality Test:</strong> Interview for candidates who qualify the main examination</li>
+            </ol>
+        </div>
+
+        <!-- Post Details Container -->
+        <div id="post-details" class="custom-container">
+            <h2>Post Details</h2>
+            <p>The UPSC exam selects candidates for various civil services, including:</p>
+            <ul>
+                <li>Indian Administrative Service (IAS)</li>
+                <li>Indian Police Service (IPS)</li>
+                <li>Indian Foreign Service (IFS)</li>
+                <li>Central Services (Group A and B)</li>
+            </ul>
+            <p>Positions have different responsibilities ranging from administrative duties to law enforcement and diplomatic services.</p>
+        </div>
+
+        <!-- Preparation Tips Container -->
+        <div id="preparation-tips" class="custom-container">
+            <h2>Preparation Tips</h2>
+            <p>To prepare effectively for the UPSC exam, consider the following tips:</p>
+            <ul>
+                <li>Understand the exam pattern and syllabus thoroughly.</li>
+                <li>Create a realistic study schedule and stick to it.</li>
+                <li>Use NCERT books as a foundation for various subjects.</li>
+                <li>Stay updated with current affairs through newspapers and magazines.</li>
+                <li>Practice writing essays and answers within the time limit.</li>
+                <li>Join mock tests and revision classes for better preparation.</li>
+            </ul>
+        </div>
+
+        <!-- Resources Container -->
+        <div id="resources" class="custom-container">
+            <h2>Resources</h2>
+            <p>Here are some valuable resources for UPSC preparation:</p>
+            <ul>
+                <li>Books: <em>Indian Polity</em> by M. Laxmikanth, <em>Certificate Physical and Human Geography</em> by G.C. Leong.</li>
+                <li>Websites: <a href="https://www.upsc.gov.in/" target="_blank">UPSC Official Website</a>, <a href="https://www.civilserviceindia.com/" target="_blank">Civil Service India</a>.</li>
+                <li>YouTube Channels: Search for UPSC preparation channels for lectures and tips.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 UPSC Exam Preparation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap and jQuery Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
